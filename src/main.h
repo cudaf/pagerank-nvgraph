@@ -1,4 +1,5 @@
 #pragma once
+#include "_nvgraph.h"
 #include "_cuda.h"
 #include "_graph.h"
 #include "_support.h"
