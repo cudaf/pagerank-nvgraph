@@ -13,9 +13,9 @@ int main(int argc, char **argv) {
   readMtx(argv[1], g);
   print(g);
 
-  // DiGraph<int, float, float> h;
-  // transposeForNvgraph(g, h);
-  // print(h);
+  DiGraph<int, float, float> h;
+  transposeForNvgraph(g, h);
+  print(h);
 
   // runPageRank(h);
   return 0;

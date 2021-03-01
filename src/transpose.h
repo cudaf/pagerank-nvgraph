@@ -19,12 +19,14 @@ auto& transpose(G& x, H& a) {
 
 
 template <class G, class H>
-auto& transposeWithDegree(G& x, H& a) {
+auto& transposeForNvgraph(G& x, H& a) {
+  using V = typename H::TVertex;
+  using E = typename H::TEdge;
   for (auto u : x.vertices())
-    a.addVertex(u, x.degree(u));
+    a.addVertex(u, x.degree(u) == 0? V(1) : V(0));
   for (auto u : x.vertices()) {
     for (auto v : x.edges(u))
-      a.addEdge(v, u, x.edgeData(u, v));
+      a.addEdge(v, u, E(1)/x.degree(u));
   }
   return a;
 }
