@@ -8,10 +8,10 @@ using namespace std;
 
 
 int main(int argc, char **argv) {
-  // printf("Loading graph ...\n");
-  // DiGraph<> g;
-  // readMtx(argv[1], g);
-  // print(g);
+  printf("Loading graph ...\n");
+  DiGraph<> g;
+  readMtx(argv[1], g);
+  print(g);
 
   // DiGraph<int, float, float> h;
   // transposeForNvgraph(g, h);
