@@ -14,3 +14,4 @@
 #include "measureDuration.h"
 #include "read.h"
 #include "transpose.h"
+#include "pageRank.h"
