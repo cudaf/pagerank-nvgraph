@@ -70,7 +70,8 @@ cd pagerank-nvgraph && ./install.sh
 
 ```bash
 # Run program
-!cd pagerank-nvgraph && nvcc -Xcompiler -fopenmp -lnvgraph -O3 main.cu && nvprof ./a.out data/aug2d.mtx
+cd pagerank-nvgraph && nvcc -Xcompiler -fopenmp -lnvgraph -O3 main.cu
+cd pagerank-nvgraph && nvprof ./a.out data/aug2d.mtx
 ```
 
 <br>
