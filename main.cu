@@ -11,7 +11,7 @@ template <class G>
 void runPageRank(G& x, bool all) {
   float t;
   auto ranks = pageRank(t, x);
-  printf("[%07.1f ms] pageRank\n", t); if (all) print(ranks);
+  printf("[%.3f ms] pageRank\n", t); if (all) print(ranks);
 }
 
 

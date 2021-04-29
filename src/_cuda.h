@@ -16,6 +16,11 @@
 #define _BLOCKS 1024
 #endif
 
+#ifndef _REPEAT
+/** No. of times to repeat execution. */
+#define _REPEAT 10
+#endif
+
 
 
 
